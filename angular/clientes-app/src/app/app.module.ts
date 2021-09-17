@@ -6,6 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { DirectivaComponent } from './directiva/directiva.component';
 import { HeaderComponent } from './header/header.component';
+import {ClienteService} from './clientes/cliente.service';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
